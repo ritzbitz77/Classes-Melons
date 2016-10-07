@@ -15,7 +15,7 @@ class AbstractMelonOrder(object):
         """Calculate price."""
 
        
-        total = (1 + self.tax) * self.qty * base_price
+        total = (1 + self.tax) * self.qty * self.base_price
         return total
 
     def mark_shipped(self):
